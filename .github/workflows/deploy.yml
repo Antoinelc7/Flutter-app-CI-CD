@@ -1,0 +1,14 @@
+name: Flutter CI/CD
+
+on: # Ici on définit les triggers
+  push: # ici on dit que la pipeline va se lancer au push des branches ci dessous
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du repo / init du repo
+        uses: actions/checkout@v4
