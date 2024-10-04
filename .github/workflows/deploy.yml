@@ -12,3 +12,9 @@ jobs:
     steps:
       - name: Checkout du repo / init du repo
         uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          #flutter-version: 'stable'
